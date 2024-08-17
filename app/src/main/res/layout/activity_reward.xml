@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RewardActivity">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="190dp"
+        android:id="@+id/layout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="@color/green">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilephoto"
+            android:layout_width="98dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/darkgreen"
+            android:padding="5dp"
+            android:src="@drawable/baseline_person_24"
+            app:shapeAppearanceOverlay="@style/circularre"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rewardname"
+            android:text="Username"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/points"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/points"
+            android:text="Your Points"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="150dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:id="@+id/layout2"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/layout1"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/reward"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/Redeembtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_back"
+            android:backgroundTint="@color/darkgreen"
+            android:onClick="redeem"
+            android:text="Redeem Your Rewards"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:id="@+id/layout3"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/layout2"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/referearn"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_back"
+            android:backgroundTint="@color/darkgreen"
+            android:onClick="refer"
+            android:text="Refer and Earn"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:id="@+id/layout4"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/layout3"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/transaction"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Transaction History"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_back"
+            android:onClick="trhistory"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">E-Trash</string>
+    <string name="screen1">Alert the Hotspots</string>
+    <string name="screen2">Classify using AI</string>
+    <string name="screen3">Share the Location</string>
+    <string name="screen1desc">Share the images and report the location of waste dump to the government.</string>
+    <string name="screen2desc">Classify the wastes using image recognition technology.</string>
+    <string name="screen3desc">View the location of waste dump or share the location of waste dump to the government.</string>
+    <string name="startDesc">E-Trash is a waste management application. Here you will be able to connect with your nearest vendor based on your location.</string>
+    <string name="AboutUs">An App to alert the government</string>
+    <string name="Queries">This app is created by the students of Department of Information Technology batch [ 2021-2025 ] from University College of Engineering</string>
+    <string name="contactdetails">E-Mail: ETrash@gmail.com</string>
+    <string name="contactphone">Phone: 987654321</string>
+    Places.initialize(getApplicationContext(),AIzaSyDEgGDI0l9VmnIgrZODvYCES9bWLF7HwxQ);
+</resources>

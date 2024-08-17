@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEF6CE"
+    tools:context=".FeedBackActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FEEDBACK"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:id="@+id/feedback"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RATE US :"
+        android:textStyle="bold"
+        android:layout_below="@+id/feedback"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:id="@+id/rateus"/>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="235dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/rateus" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write a Review :"
+        android:textStyle="bold"
+        android:layout_below="@+id/ratingBar"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:id="@+id/review"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/reviewtext"
+        android:hint="Your Comments (Optional)"
+        android:textColor="@color/black"
+        android:layout_below="@id/review"
+        android:textAlignment="center"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="@color/green"/>
+
+    <Button
+        android:id="@+id/feedbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_alignBottom="@+id/reviewtext"
+        android:layout_marginBottom="-93dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/darkgreen"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
